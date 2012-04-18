@@ -153,7 +153,7 @@ function html5mp3playlist_install()
 
 
 add_filter('the_content','html5mp3playlist_content');
-add_filter('the_excerpt','html5mp3playlist_content');
+//add_filter('the_excerpt','html5mp3playlist_content');
 add_action('admin_menu', 'html5mp3playlist_add_admin');
 
 register_activation_hook(__FILE__,"html5mp3playlist_install");
