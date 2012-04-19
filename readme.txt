@@ -21,9 +21,10 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 A HTML5 playlist player can be embedded in a post using a tag of the following
 form:
 
-[html5mp3playlist:URL]
 
-e.g. [html5mp3playlist:http://www.svnlabs.com/list.xml]  (Coming Soon)
+[html5mp3playlist]
+
+
 
 You can also set global options in the html5 mp3 playlist option menu.
 

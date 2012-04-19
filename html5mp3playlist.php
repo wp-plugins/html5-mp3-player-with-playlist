@@ -108,7 +108,7 @@ function html5mp3playlist_options()
     <p class="submit"><input name="Submit" value="Update Options &raquo;" type="submit"></p>
     
     
-     <strong>Uses</strong>: [html5mp3playlist:http://www.svnlabs.com/list.xml]<br />
+     <strong>Uses</strong>: [html5mp3playlist]<br />
 <br />
     
         <table class="optiontable">    
