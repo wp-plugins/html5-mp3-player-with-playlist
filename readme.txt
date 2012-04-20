@@ -1,6 +1,6 @@
 === HTML5 MP3 Player with Playlist ===
 Contributors: Sandeep Verma
-Donate link: http://www.svnlabs.com/html5-mp3-player-for-ipad
+Donate link: http://html5.svnlabs.com/
 Tags: html5, mp3 player, playlist, audio, audio player
 
 Requires at least: 1.5
@@ -10,7 +10,7 @@ Stable tag: 1.07
 Allows Wordpress users to easily use HTML5 <audio> the element enable native audio playback within the browser. It supports all browsers i.e. Firefox, Chrome, Safari, IE and Opera.
 HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
 
-Get fully customized HTML5 MP3 Player with Playlist for Website http://www.scriptrr.com/html5-mp3-player-with-playlist-for-website/
+Get fully customized HTML5 MP3 Player with Playlist for Website http://html5.svnlabs.com/
 
 == Installation ==
 
