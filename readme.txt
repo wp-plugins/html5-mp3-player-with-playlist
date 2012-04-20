@@ -1,6 +1,6 @@
 === HTML5 MP3 Player with Playlist ===
 Contributors: Sandeep Verma
-Donate link: http://www.svnlabs.com/
+Donate link: http://www.svnlabs.com/html5-mp3-player-for-ipad
 Tags: html5, mp3 player, playlist, audio, audio player
 
 Requires at least: 1.5
@@ -34,7 +34,7 @@ You can also set global options in the html5 mp3 playlist option menu.
 1. html5 mp3 playlist player.
 
 == Support ==
-For support please visit http://www.svnlabs.com/
+For support please visit http://www.svnlabs.com/html5-mp3-player-for-ipad
 
 == Changelog == 
 
