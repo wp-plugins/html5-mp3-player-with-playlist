@@ -42,8 +42,20 @@ function html5mp3playlist_content($content) {
     $size     = intval(get_option('html5mp3playlist_size'));
     
      
+	$regex = '/\[html5mp3(full|small):(.*?)]/i';
+    preg_match_all( $regex, $content, $matches );
+	//echo "<pre>";
+	//print_r($matches);
      
-    $content = '<iframe src="http://demo.svnlabs.com/html5player/meth/" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="225"></iframe>';
+	if($matches[1][0]=="full") 
+	{ 
+	 $content = '<iframe src="http://html5.svnlabs.com/html5full.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="225"></iframe>';
+	}
+	else
+	{
+	$content = '<iframe src="http://html5.svnlabs.com/html5small.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="225"></iframe>';	
+	}
+	
     
     
     
@@ -99,43 +111,15 @@ function html5mp3playlist_options()
 </form>
 <br />
 
-<a href="http://www.scriptrr.com/html5-mp3-player-with-playlist-for-website/" target="_blank">Get fully customized HTML5 MP3 Player with Playlist for Website</a>     
+<a href="http://www.scriptrr.com/html5-mp3-player-with-playlist-for-website/" target="_blank">Security is not Free - Get fully customized HTML5 MP3 Player with Playlist for Website</a>     
     
     <p><a href="http://www.svnlabs.com/concentrate" title="concentrate"><strong>Concentrate</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/observe" title="observe"><strong>Observe</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/imagine" title="imagine"><strong>Imagine</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/launch" title="launch"><strong>Launch</strong></a></p>
     </div>
      
-    
-    <form action="?page=html5mp3playlist" method="POST">
-    <input type="hidden" name="action" value="save"/>
-    <p class="submit"><input name="Submit" value="Update Options &raquo;" type="submit"></p>
-    
-    
-     <strong>Uses</strong>: [html5mp3playlist]<br />
-<br />
-    
-        <table class="optiontable">    
-             
-            <tr>
-                <th scope="row">
-                
-                    Plugin Dimension
-                </th>
-                <td>
-                    <select name="html5mp3playlist_size">
-                    <?php foreach($html5mp3playlist_sizes as $key=>$s){ ?>
-                        <option value="<?php echo $key ?>" <?php if($key == $size){ echo "selected=\"selected\"";} ?>><?php echo $s['name']; ?></option>
-                    <?php } ?>
-                    </select>
-                </td>
-            </tr>
-            
-            
-             
-             
-            
-        </table>
-        <p class="submit"><input name="Submit" value="Update Options &raquo;" type="submit"></p>
-    </form>
+   
+   <iframe src="http://html5.svnlabs.com/form.php" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="800" height="525"></iframe> 
+   
+   
 </div>
 <?php    
 }

@@ -24,19 +24,29 @@ A HTML5 playlist player can be embedded in a post using a tag of the following
 form:
 
 
-[html5mp3playlist]
+Small Player - no playlist 
 
+[html5mp3full:id]
+ 
+Full Player - xml playlist
+
+[html5mp3full:id] 
 
 
 You can also set global options in the html5 mp3 playlist option menu.
 
 == Screenshots ==
-1. html5 mp3 playlist player.
+1. html5 mp3 full player.
+2. html5 mp3 small player.
+3. html5 mp3 playlist player settings.
 
 == Support ==
-For support please visit http://www.svnlabs.com/html5-mp3-player-for-ipad
+For support please visit http://html5.svnlabs.com/
 
 == Changelog == 
 
-
+= 1.07 =
+* XML Playlist added
+* Full / Small Sized player options added
+* Bug fixes in last release
 
