@@ -111,7 +111,7 @@ function html5mp3playlist_options()
 </form>
 <br />
 
-<a href="http://www.scriptrr.com/html5-mp3-player-with-playlist-for-website/" target="_blank">Security is not Free - Get fully customized HTML5 MP3 Player with Playlist for Website</a>     
+<a href="http://html5.svnlabs.com/" target="_blank">Security is not Free - Get fully customized HTML5 MP3 Player with Playlist for Website</a>     
     
     <p><a href="http://www.svnlabs.com/concentrate" title="concentrate"><strong>Concentrate</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/observe" title="observe"><strong>Observe</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/imagine" title="imagine"><strong>Imagine</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/launch" title="launch"><strong>Launch</strong></a></p>
     </div>
