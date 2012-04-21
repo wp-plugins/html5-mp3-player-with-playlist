@@ -56,7 +56,7 @@ function html5mp3playlist_content($content) {
 	$replace = '<iframe src="http://html5.svnlabs.com/html5small.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="208"></iframe>';	
 	}
 	
-    $content = str_replace($matches[0][$x], $replace, $content);
+    $content = str_replace($matches[0][0], $replace, $content);
     
     
     return $content;
