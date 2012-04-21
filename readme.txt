@@ -14,23 +14,20 @@ Get fully customized HTML5 MP3 Player with Playlist for Website http://html5.svn
 
 == Installation ==
 
-1. Copy html5mp3playlist.php into your wordpress plugins folder, normally located
-   in /wp-content/plugins/
+1. Copy html5mp3playlist.php into your wordpress plugins folder, normally located in /wp-content/plugins/
 
 2. Login to Wordpress Admin and activate the plugin
 
 
-A HTML5 playlist player can be embedded in a post using a tag of the following
-form:
-
+A HTML5 playlist player can be embedded in a post using a tag of the following form:
 
 Small Player - no playlist 
 
-[html5mp3full:id]
+[html5mp3small:id]  i.e. [html5mp3small:1]
  
 Full Player - xml playlist
 
-[html5mp3full:id] 
+[html5mp3full:id]   i.e. [html5mp3full:1]
 
 
 You can also set global options in the html5 mp3 playlist option menu.
