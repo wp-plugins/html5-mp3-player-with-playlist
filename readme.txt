@@ -29,6 +29,8 @@ Full Player - xml playlist
 
 [html5mp3full:id]   i.e. [html5mp3full:1]
 
+Please make sure your playlist ID after customizing XML with "html5 mp3 playlist player settings" form.
+
 
 You can also set global options in the html5 mp3 playlist option menu.
 
