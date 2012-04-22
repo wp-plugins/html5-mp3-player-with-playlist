@@ -49,11 +49,11 @@ function html5mp3playlist_content($content) {
      
 	if($matches[1][0]=="full") 
 	{ 
-	 $replace = '<iframe src="http://html5.svnlabs.com/html5full.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="208"></iframe>';
+	 $replace = '<iframe src="http://html5.svnlabs.com/html5full.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
 	}
 	else
 	{
-	$replace = '<iframe src="http://html5.svnlabs.com/html5small.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="208"></iframe>';	
+	$replace = '<iframe src="http://html5.svnlabs.com/html5small.php?id='.$matches[2][0].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';	
 	}
 	
     $content = str_replace($matches[0][0], $replace, $content);
