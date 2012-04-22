@@ -66,7 +66,7 @@ function html5mp3playlist_content($content) {
 
 
 /*
- * The Options page for EasyTube. We rock... thanks.
+ * The Options page
  */
 function html5mp3playlist_options()
 {    
@@ -95,7 +95,7 @@ function html5mp3playlist_options()
     
     
 ?>
-<!-- EasyTube - its the way forward -->
+
  <div class="wrap">
      
     <h2>HTML5 MP3 Player with Playlist Options</h2>
@@ -125,7 +125,7 @@ function html5mp3playlist_options()
 }
 
 /*
- * Install EasyTube options. We like options, they give us variety in life.
+ * Install options
  */
 function html5mp3playlist_install()
 { 
