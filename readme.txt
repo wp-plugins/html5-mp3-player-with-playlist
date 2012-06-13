@@ -12,6 +12,10 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 
 Get fully customized HTML5 MP3 Player with Horizontal and Vertical Playlist for Website http://html5.svnlabs.com/
 
+How to create HTML5 MP3 Player Playlist?
+http://www.youtube.com/watch?v=f9Cc0SQyguU
+
+
 ShortCodes: http://html5.svnlabs.com/shortcodes/
 
 FAQ: http://html5.svnlabs.com/faq/
@@ -25,6 +29,7 @@ Vertical Playlist: http://html5.svnlabs.com/vertical-playlist/
 Radio FM Stream Player: http://html5.svnlabs.com/radio-fm-stream/
 
 Footer Stick HTML5 MP3 Player: http://html5.svnlabs.com/footer-stick-html5-mp3-player-with-playlist/
+http://www.youtube.com/watch?v=R5pSzhpU5mI
 
 HTML5 MP3 Player with Downloadable Playlist Option: http://html5.svnlabs.com/html5-mp3-player-with-downloadable-playlist-option/
 
