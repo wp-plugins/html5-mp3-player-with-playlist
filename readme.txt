@@ -56,6 +56,7 @@ You can also set global options in the html5 mp3 playlist option menu.
 1. html5 mp3 full player.
 2. html5 mp3 small player.
 3. html5 mp3 playlist player settings.
+4. Paid Vertical HTML5 MP3 Player with Playlist.
 
 == Support ==
 For support please visit http://html5.svnlabs.com/
