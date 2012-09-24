@@ -10,6 +10,28 @@ Stable tag: 1.078
 Allows Wordpress users to easily use HTML5 <audio> the element enable native audio playback within the browser. It supports all browsers i.e. Firefox, Chrome, Safari, IE and Opera.
 HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
 
+
+<b>Free Features</b>
+Supports mp3 format
+Support XML based Song Playlist
+Unicode support
+Social Links facebook / twitter
+Works in IE, Safari, Firefox, Chrome, Opera, mobile devices including Android/iOS
+Player have shortcode for post/page Small Player [html5mp3small:id] and Full Player [html5mp3full:id]
+
+
+<b>Paid Features</b>
+Big Player - Vertical Playlist [html5mp3big:id]
+Song Download Option
+Color / Size Customization
+Social Link Customization
+Multiple player on same page / post
+Shoutcast / Icecast Radio Stream support
+Facebook page customization with player
+Auto Playlist from Song's Folder
+Best support on email / skype
+
+
 Get fully customized HTML5 MP3 Player with Horizontal and Vertical Playlist for Website http://html5.svnlabs.com/
 
 How to create HTML5 MP3 Player Playlist?
