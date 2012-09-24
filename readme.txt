@@ -14,9 +14,9 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 **Free Features**
 
 * Supports mp3 format
-* Support XML based Song Playlist
-* Unicode support
-* Social Links facebook / twitter
+* Supports XML based Song Playlist
+* Supports Unicode 
+* Social Links Facebook / Twitter
 * Works in IE, Safari, Firefox, Chrome, Opera, mobile devices including Android/iOS
 * Player have shortcode for post/page Small Player [html5mp3small:id] and Full Player [html5mp3full:id]
 
@@ -28,8 +28,8 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 * Color / Size Customization
 * Social Link Customization
 * Multiple player on same page / post
-* Shoutcast / Icecast Radio Stream support
-* Wowza / Amazon Cloud Front / S3 HTTP Streaming support
+* Supports Shoutcast / Icecast Radio Stream 
+* Supports Wowza / Amazon Cloud Front / S3 HTTP Streaming 
 * Facebook page customization with player
 * Auto Playlist from Song's Folder
 * Best support on email / skype
