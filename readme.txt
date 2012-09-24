@@ -45,7 +45,7 @@ ShortCodes: http://html5.svnlabs.com/shortcodes/
 
 FAQ: http://html5.svnlabs.com/faq/
 
-**Other Options: **
+**Other Links:**
 
 Horizontal Playlist: http://html5.svnlabs.com/horizontal-playlist/
 
