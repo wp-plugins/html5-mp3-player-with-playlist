@@ -25,6 +25,7 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 
 * Big Player - Vertical Playlist [html5mp3big:id]
 * Song Download Option
+* Random/Shuffle mode in playlist
 * Color / Size Customization
 * Social Link Customization
 * Multiple player on same page / post
