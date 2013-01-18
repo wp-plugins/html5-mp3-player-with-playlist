@@ -35,13 +35,13 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 * Best support on email / skype
 
 
-Get fully customized Self Hosted HTML5 MP3 Player with Horizontal and Vertical Playlist for Website http://html5.svnlabs.com/
+Get fully customized Self Hosted HTML5 MP3 Player with Horizontal and Vertical Playlist for Website http://html5plus.svnlabs.com/
 
 **How to create HTML5 MP3 Player Playlist?**
 http://www.youtube.com/watch?v=f9Cc0SQyguU
 
 
-ShortCodes: http://html5.svnlabs.com/shortcodes/
+ShortCodes: http://html5plus.svnlabs.com/developers/shortcodes/
 
 FAQ: http://html5.svnlabs.com/faq/
 
@@ -89,7 +89,7 @@ You can also set global options in the html5 mp3 playlist option menu.
 4. Paid Vertical HTML5 MP3 Player with Playlist.
 
 == Support ==
-For support please visit http://html5.svnlabs.com/
+For support please visit http://html5plus.svnlabs.com/contact-us/support/
 
 == Changelog == 
 
