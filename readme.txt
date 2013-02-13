@@ -34,7 +34,7 @@ HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, T
 * Facebook page customization with player
 * Auto Playlist from Song's Folder
 * Self Hosted Player
-* Best support on email / skype
+* Best support on email
 
 
 **Note: Free HTML5 MP3 Player with Playlist plugin is hosted on "html5.svnlabs.com", so get paid version for self hosted plugin files.**  
