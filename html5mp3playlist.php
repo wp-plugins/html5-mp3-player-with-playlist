@@ -97,9 +97,25 @@ function html5mp3playlist_options()
 ?>
 
  <div class="wrap">
+ 
+ 
      
     <h2>HTML5 MP3 Player with Playlist Options</h2>
-    <div style="float: right; width: 300px; padding: 10px; text-align:center; background-color: #FFFFCC; border: 1px solid #000">
+    
+    
+    <iframe src="http://html5.svnlabs.com/form.php?host=<?php echo $_SERVER['HTTP_HOST'];?>" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="80%"></iframe> 
+    
+    <br />
+
+
+  
+    
+    
+    
+    
+  <h2>  Embed, Play, Listen and Share MP3 Music from Amazon S3, CDN, Icecast, Shoutcast, Soundcloud, Dropbox, Feedburner and MP3 Folder.</h2>
+  
+  <div style="width: 300px; padding: 10px; clear:both; text-align:center; background-color: #FFFFCC; border: 1px solid #000">
     <h3 style="text-align:center">Do you like this plugin? <br />I want to make it better?</h3>
     
     
@@ -115,9 +131,17 @@ function html5mp3playlist_options()
     
     <p><a href="http://www.svnlabs.com/concentrate" title="concentrate"><strong>Concentrate</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/observe" title="observe"><strong>Observe</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/imagine" title="imagine"><strong>Imagine</strong></a> <strong>&gt;</strong> <a href="http://www.svnlabs.com/launch" title="launch"><strong>Launch</strong></a></p>
     </div>
+
+Upload Music on Cloud and Share Sermons, Meetings, Interviews, Podcasts, MixTaps, Audio Recordings.
+
+
+<a href="http://html5plus.svnlabs.com/" title="All New Automated Cart for HTML5 MP3 Players" target="_blank"><img src="http://html5plus.svnlabs.com/New_Layout.png" width="150" border="0"></a>
+    
+    
+    
      
    
-   <iframe src="http://html5.svnlabs.com/form.php?host=<?php echo $_SERVER['HTTP_HOST'];?>" frameborder="0" marginheight="0" marginwidth="0" width="800" height="525"></iframe> 
+
    
    
 </div>
