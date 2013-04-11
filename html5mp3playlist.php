@@ -138,11 +138,6 @@ Upload Music on Cloud and Share Sermons, Meetings, Interviews, Podcasts, MixTaps
 <a href="http://html5plus.svnlabs.com/" title="All New Automated Cart for HTML5 MP3 Players" target="_blank"><img src="http://html5plus.svnlabs.com/New_Layout.png" width="150" border="0"></a>
     
     
-    
-     
-   
-
-   
    
 </div>
 <?php    
