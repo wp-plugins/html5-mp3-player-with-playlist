@@ -11,6 +11,8 @@ Allows Wordpress users to easily use HTML5 <audio> the element enable native aud
 HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
 
 
+[Responsive HTML5 MP3 Player with Playlist](http://html5plus.svnlabs.com/shop/responsive-html5-mp3-player-with-playlist/)
+
 **Free Features**
 
 * Supports mp3 format
