@@ -57,12 +57,10 @@ Horizontal Playlist: http://html5.svnlabs.com/horizontal-playlist/
 
 Vertical Playlist: http://html5.svnlabs.com/vertical-playlist/
 
-Radio FM Stream Player: http://html5.svnlabs.com/radio-fm-stream/
+Radio FM Stream Player: http://html5plus.svnlabs.com/shop/html5-mp3-radio-fm-stream/
 
 Footer Stick HTML5 MP3 Player: http://html5.svnlabs.com/footer-stick-html5-mp3-player-with-playlist/
 http://www.youtube.com/watch?v=R5pSzhpU5mI
-
-HTML5 MP3 Player with Downloadable Playlist Option: http://html5.svnlabs.com/html5-mp3-player-with-downloadable-playlist-option/
 
 Karaoke - HTML5 MP3 Player with Lyrics: http://html5.svnlabs.com/karaoke-html5-mp3-player-with-lyrics/
 
