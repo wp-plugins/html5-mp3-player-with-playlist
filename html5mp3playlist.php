@@ -103,7 +103,7 @@ function html5mp3playlist_options()
     <h2>HTML5 MP3 Player with Playlist Options</h2>
     
     
-    <iframe src="http://html5.svnlabs.com/form.php?host=<?php echo $_SERVER['HTTP_HOST'];?>" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="80%"></iframe> 
+    <iframe src="http://html5.svnlabs.com/form.php?host=<?php echo $_SERVER['HTTP_HOST'];?>" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="700"></iframe> 
     
     <br />
 
