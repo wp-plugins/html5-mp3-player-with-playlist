@@ -14,7 +14,7 @@ Version: 2.7
 /*
 Author: Sandeep Verma
 Website: http://www.svnlabs.com
-Copyright 2013 SVN Labs Softwares, Jaipur, India All Rights Reserved.
+Copyright 2012 SVN Labs Softwares, Jaipur, India All Rights Reserved.
 
 */
 

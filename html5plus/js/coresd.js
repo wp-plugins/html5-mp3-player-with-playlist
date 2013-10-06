@@ -1,16 +1,16 @@
 looptrack = 0;
-      jQuery(function() { 
+      $(function() { 
         // Setup the player to autoplay the next track
         var a = audiojs.createAll({
           trackEnded: function() {
-            var next = looptrack==0 ? jQuery('ol li.playing').next().next() : jQuery('ol li.playing');
-            if (!next.length) next = jQuery('ol li').first();
+            var next = looptrack==0 ? $('ol li.playing').next().next() : $('ol li.playing');
+            if (!next.length) next = $('ol li').first();
             next.addClass('playing').siblings().removeClass('playing');
-            audio.load(jQuery('a', next).attr('data-src'));
+            audio.load($('a', next).attr('data-src'));
 			audio.play();
 			
-			jQuery('#current-track'+id).html(jQuery('a', next).attr('title'));
-			jQuery('#current-play-pic'+id).attr('src', jQuery('a', next).attr('name'));
+			$('#current-track'+id).html($('a', next).attr('title'));
+			$('#current-play-pic'+id).attr('src', $('a', next).attr('name'));
 			
           }
         });
@@ -18,71 +18,71 @@ looptrack = 0;
         
         // Load in the first track
         var audio = a[0];
-            first = jQuery('ol li a').attr('data-src'); // previous first = jQuery('ol a').attr('data-src');
-        jQuery('ol li').first().addClass('playing');
+            first = $('ol li a').attr('data-src'); // previous first = $('ol a').attr('data-src');
+        $('ol li').first().addClass('playing');
         audio.load(first);
-		jQuery('#current-track'+id).html(jQuery('ol li a').first().attr('title'));
-		jQuery('#current-play-pic'+id).attr('src',jQuery('ol li a').first().attr('name'));
+		$('#current-track'+id).html($('ol li a').first().attr('title'));
+		$('#current-play-pic'+id).attr('src',$('ol li a').first().attr('name'));
 		
 
         // Load in a track on click
-        jQuery('ol li').click(function(e) {
+        $('ol li').click(function(e) {
           e.preventDefault();
-          jQuery(this).addClass('playing').siblings().removeClass('playing');
-          audio.load(jQuery('a', this).attr('data-src'));
+          $(this).addClass('playing').siblings().removeClass('playing');
+          audio.load($('a', this).attr('data-src'));
           audio.play();
         });
 		
 		// change current track name & image
-		jQuery('.track-name').click(function(e) {
-          jQuery('#current-track'+id).html(jQuery(this).attr('title'));
-		  jQuery('#current-play-pic'+id).attr('src',jQuery(this).attr('name'));
+		$('.track-name').click(function(e) {
+          $('#current-track'+id).html($(this).attr('title'));
+		  $('#current-play-pic'+id).attr('src',$(this).attr('name'));
         });
 		
 		// mouse click events for track change		
-		jQuery('#next_track'+id).click(function() { 
-			var next = jQuery('.playing').next().next(); // previous var next = jQuery('.playing').next();
-			if (!next.length) next = jQuery('.Palylist01').first();
-			if(jQuery('a', next).attr('title')!=null){
-				jQuery('#current-track'+id).html(jQuery('a', next).attr('title'));
-				jQuery('#current-play-pic'+id).attr('src', jQuery('a', next).attr('name'));
+		$('#next_track'+id).click(function() { 
+			var next = $('.playing').next().next(); // previous var next = $('.playing').next();
+			if (!next.length) next = $('.Palylist01').first();
+			if($('a', next).attr('title')!=null){
+				$('#current-track'+id).html($('a', next).attr('title'));
+				$('#current-play-pic'+id).attr('src', $('a', next).attr('name'));
 				
-			//jQuery('#scrollbar1').tinyscrollbar_update(60);	
+			//$('#scrollbar1').tinyscrollbar_update(60);	
 			}
 			next.click();
 			
 		
 		});	
 				
-		jQuery('#prev_track'+id).click(function() { 
-			var prev = jQuery('.playing').prev().prev(); // previous var prev = jQuery('.playing').prev();
-            if (!prev.length) prev = jQuery('.Palylist01').last();
-			if(jQuery('a', prev).attr('title')!=null){
-				jQuery('#current-track'+id).html(jQuery('a', prev).attr('title'));
-				jQuery('#current-play-pic'+id).attr('src', jQuery('a', prev).attr('name'));
+		$('#prev_track'+id).click(function() { 
+			var prev = $('.playing').prev().prev(); // previous var prev = $('.playing').prev();
+            if (!prev.length) prev = $('.Palylist01').last();
+			if($('a', prev).attr('title')!=null){
+				$('#current-track'+id).html($('a', prev).attr('title'));
+				$('#current-play-pic'+id).attr('src', $('a', prev).attr('name'));
 				
-			//jQuery('#scrollbar1').tinyscrollbar_update(0);	
+			//$('#scrollbar1').tinyscrollbar_update(0);	
 			}
             prev.click();
 
 			
 		});	
 		
-		jQuery('#play-pause'+id).click(function() { 
+		$('#play-pause'+id).click(function() { 
 			 audio.playPause();
 		});	
 		
 		// loop track 
-		jQuery('#loop-track'+id).click(function(){
-	      jQuery('#loop-track-box'+id).hide();
-		  jQuery('#noloop-track-box'+id).show();
+		$('#loop-track'+id).click(function(){
+	      $('#loop-track-box'+id).hide();
+		  $('#noloop-track-box'+id).show();
 		  //audio.settings.loop = true;
 		  looptrack = 1;
 		});
 		
-		jQuery('#noloop-track'+id).click(function(){
-	      jQuery('#loop-track-box'+id).show();
-		  jQuery('#noloop-track-box'+id).hide();
+		$('#noloop-track'+id).click(function(){
+	      $('#loop-track-box'+id).show();
+		  $('#noloop-track-box'+id).hide();
 		 // audio.settings.loop = false;
 		 looptrack = 0;
 		});
@@ -90,22 +90,22 @@ looptrack = 0;
 		
 		// shuffle tracks
 		
-		jQuery('#shuffle-track'+id).click(function(){
-	      jQuery('#shuffle-track-box'+id).hide();
-		  jQuery('#noshuffle-track-box'+id).show();
+		$('#shuffle-track'+id).click(function(){
+	      $('#shuffle-track-box'+id).hide();
+		  $('#noshuffle-track-box'+id).show();
 		  
 		  
-		jQuery(".track-name").each(function (idx, el) { 
+		$(".track-name").each(function (idx, el) { 
 		
 		  //alert( "this is element " + idx);
 		  
-		  //var idd = jQuery(this).attr('id');   
+		  //var idd = $(this).attr('id');   
 		  
-		  //console.log( idd+' data-src= ' + jQuery(this).attr('data-src') );
+		  //console.log( idd+' data-src= ' + $(this).attr('data-src') );
 		  
-		  jQuery('#source'+id+idx+'download').attr('href', jQuery(this).attr('data-src'))
+		  $('#source'+id+idx+'download').attr('href', $(this).attr('data-src'))
 		  
-		  //console.log( idx+' download.src= ' + jQuery('#source'+idd+'download').attr('href') );
+		  //console.log( idx+' download.src= ' + $('#source'+idd+'download').attr('href') );
 		  
 		
 		});
@@ -113,15 +113,15 @@ looptrack = 0;
 		  
 		});
 		
-		jQuery('#noshuffle-track'+id).click(function(){
-	      jQuery('#shuffle-track-box'+id).show();
-		  jQuery('#noshuffle-track-box'+id).hide();
+		$('#noshuffle-track'+id).click(function(){
+	      $('#shuffle-track-box'+id).show();
+		  $('#noshuffle-track-box'+id).hide();
 		 // audio.settings.loop = false;
 		// shuffletrack = 0;
 		});
 		
 	   
-	    var scrubber1 = jQuery('#Player-progressbar01'+id);
+	    var scrubber1 = $('#Player-progressbar01'+id);
 		
 		leftPos = function(elem) {
             var curleft = 0;
@@ -131,7 +131,7 @@ looptrack = 0;
             return curleft;
           };
 	     
-		 jQuery('#Player-progressbar01'+id).click(function(e){
+		 $('#Player-progressbar01'+id).click(function(e){
 		 var relativeLeft = e.clientX - leftPos(this);
 		 
 		 //alert(e.clientX);
@@ -144,17 +144,17 @@ looptrack = 0;
 		
 		
         // Keyboard shortcuts
-        jQuery(document).keydown(function(e) {
+        $(document).keydown(function(e) {
           var unicode = e.charCode ? e.charCode : e.keyCode;
              // right arrow
           if (unicode == 39) {
-            var next = jQuery('li.playing').next().next();
-            if (!next.length) next = jQuery('ol li').first();
+            var next = $('li.playing').next().next();
+            if (!next.length) next = $('ol li').first();
             next.click();
             // back arrow
           } else if (unicode == 37) {
-            var prev = jQuery('li.playing').prev().prev();
-            if (!prev.length) prev = jQuery('ol li').last();
+            var prev = $('li.playing').prev().prev();
+            if (!prev.length) prev = $('ol li').last();
             prev.click();
             // spacebar
           } else if (unicode == 32) {

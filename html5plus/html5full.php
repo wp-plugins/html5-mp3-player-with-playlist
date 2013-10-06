@@ -39,19 +39,23 @@ var autoplayz = false;
 var plugin_url = '<?php echo plugin_dir_url(__FILE__); ?>';
 var id = '<?php echo $id; ?>';
 
+var $ = jQuery;
+
 </script>
 
 <?php include("css/player.css.php"); ?>
 
+<script type="text/javascript" src="<?php echo plugin_dir_url(__FILE__); ?>js/jquery.tinyscrollbar.min.js"></script>
+
 <script src="<?php echo plugin_dir_url(__FILE__); ?>audiojs/audio.js"></script>
 <script src="<?php echo plugin_dir_url(__FILE__); ?>js/coresd.js"></script>	  
 	  
-<script type="text/javascript" src="<?php echo plugin_dir_url(__FILE__); ?>js/jquery.tinyscrollbar.min.js"></script>
+
 <script type="text/javascript">
 		jQuery(document).ready(function(){
-			jQuery('#scrollbar1<?php echo $id; ?>').tinyscrollbar();
+			$('#scrollbar1<?php echo $id; ?>').tinyscrollbar();
 			
-			jQuery('#trackbar1<?php echo $id; ?>').strackbar({ callback: onTick1, defaultValue: 3, sliderHeight: 4, sliderWidth: 68, style: 'style1', animate: true, ticks: true, labels: false, trackerHeight: 20, trackerWidth: 19 });
+			$('#trackbar1<?php echo $id; ?>').strackbar({ callback: onTick1, defaultValue: 3, sliderHeight: 4, sliderWidth: 68, style: 'style1', animate: true, ticks: true, labels: false, trackerHeight: 20, trackerWidth: 19 });
 							
 		});
 </script>
