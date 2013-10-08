@@ -148,11 +148,11 @@ Background Color: #<input type="text" size="7" name="bgcolor" value="<?php echo 
 
 Artwork: <input type="text" name="pimage" value="<?php echo $docdata['image']; ?>" placeholder="image" />&nbsp;&nbsp;&nbsp;&nbsp;
 
-Player Size: <select name="size">
+<?php /*?>Player Size: <select name="size">
 <option value="full" <?php if($docdata['size']=="full") { ?>selected="selected"<?php } ?>>Full (Horizontal)</option>
 <?php /*?><option value="big" <?php if($docdata['size']=="big") { ?>selected="selected"<?php } ?>>Big (Vertical)</option><?php */?>
 <option value="small" <?php if($docdata['size']=="small") { ?>selected="selected"<?php } ?>>Small (No Playlist)</option>
-</select>
+</select><?php */?>
 
 <?php /*?>Width: <input type="text" name="width" value="<?php echo $docdata['width']; ?>" placeholder="width" />&nbsp;&nbsp;&nbsp;&nbsp;
 Height: <input type="text" name="height" value="<?php echo $docdata['height']; ?>" placeholder="height" />&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
@@ -169,6 +169,8 @@ Embed: <input type="checkbox" name="embed" value="1" <?php if(isset($docdata['em
 <input type="hidden" name="popout" value="0" />
 <input type="hidden" name="shuffle" value="0" />
 <input type="hidden" name="link" value="1" />
+<input type="hidden" name="size" value="full" />
+
 
 Autoplay: <input type="checkbox" name="autoplay" value="1" <?php if(isset($docdata['autoplay']) && $docdata['autoplay']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;
 Scrolling Title: <input type="checkbox" name="scrollingtext" value="1" <?php if(isset($docdata['scrollingtext']) && $docdata['scrollingtext']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;
