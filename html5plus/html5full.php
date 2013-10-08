@@ -21,9 +21,9 @@ $autoplay = isset($docdata['autoplay'])?$docdata['autoplay']:"";
 $size = isset($docdata['size'])?$docdata['size']:"";
 $image = isset($docdata['image'])?$docdata['image']:"";
 $scrollingtext = isset($docdata['scrollingtext'])?$docdata['scrollingtext']:"";
-$facebook = isset($docdata['facebook'])?$docdata['facebook']:"http://www.facebook.com/svnlab/";
-$twitter = isset($docdata['twitter'])?$docdata['twitter']:"http://twitter.com/svnlabs/";
-$link = isset($docdata['link'])?$docdata['link']:"http://html5.svnlabs.com/";
+$facebook = isset($docdata['facebook'])?$docdata['facebook']:"1";
+$twitter = isset($docdata['twitter'])?$docdata['twitter']:"1";
+$link = isset($docdata['link'])?$docdata['link']:"1";
 
 
 if($bgcolor=="") $bgcolor = '000';
@@ -103,7 +103,7 @@ var $ = jQuery;
     <div id="Playlist-heading<?php echo $id; ?>" style="height:16px;">
     
     <div style="float:left"><strong>Playlist</strong></div>
-    <div style="float:right; margin-right:-10px;"><a href="javascript:void(0)" onClick="SocialShareTwitter();" title="Twitter"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/twitter.png" border="0" width="18" /></a><a href="javascript:void(0)" onClick="SocialShareFB();"  title="Facebook"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/facebook.png" border="0" width="18" /></a><a href="<?php echo $link; ?>"   title="Popout"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/link-icon.png" border="0" width="18" /></a>
+    <div style="float:right; margin-right:-10px;"><a href="javascript:void(0)" onClick="SocialShareTwitter();" title="Twitter"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/twitter.png" border="0" width="18" /></a><a href="javascript:void(0)" onClick="SocialShareFB();"  title="Facebook"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/facebook.png" border="0" width="18" /></a>
     
     
     </div>

@@ -127,7 +127,7 @@ if(isset($_REQUEST['dlicon']) && $_REQUEST['dlicon']!="")
 }
 else
 {
-  $dlicon = 'http://html5.svnlabs.com/html5plus/download.png'; //$c[$rnd];
+  $dlicon = ''; //$c[$rnd];
 }
 
 
@@ -171,7 +171,7 @@ else
 
 
 
-<script type="text/javascript" src="<?php echo plugin_dir_url(__FILE__); ?>js/jscolor.js"></script>
+
 
 <?php //$mm = 2; ?>
 

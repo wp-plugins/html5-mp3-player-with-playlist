@@ -137,7 +137,7 @@ Artist: <input type="text" name="partist" value="<?php echo $docdata['artist']; 
 
 Facebook: <input type="text" name="facebook" value="<?php echo $docdata['facebook']; ?>" placeholder="facebook link" />&nbsp;&nbsp;&nbsp;&nbsp;
 Twitter: <input type="text" name="twitter" value="<?php echo $docdata['twitter']; ?>" placeholder="twitter link" />&nbsp;&nbsp;&nbsp;&nbsp;
-Link: <input type="text" name="link" value="<?php echo $docdata['link']; ?>" placeholder="link" />&nbsp;&nbsp;&nbsp;&nbsp;
+<?php /*?>Link: <input type="text" name="link" value="<?php echo $docdata['link']; ?>" placeholder="link" />&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
 
 <br />
 <br />
@@ -168,6 +168,7 @@ Embed: <input type="checkbox" name="embed" value="1" <?php if(isset($docdata['em
 <input type="hidden" name="embed" value="0" />
 <input type="hidden" name="popout" value="0" />
 <input type="hidden" name="shuffle" value="0" />
+<input type="hidden" name="link" value="1" />
 
 Autoplay: <input type="checkbox" name="autoplay" value="1" <?php if(isset($docdata['autoplay']) && $docdata['autoplay']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;
 Scrolling Title: <input type="checkbox" name="scrollingtext" value="1" <?php if(isset($docdata['scrollingtext']) && $docdata['scrollingtext']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;

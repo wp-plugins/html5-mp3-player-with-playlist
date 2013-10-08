@@ -9,14 +9,21 @@ Stable tag: 2.7
 
 
 Allows Wordpress users to easily use HTML5 <audio> the element enable native audio playback within the browser. It supports all browsers i.e. Firefox, Chrome, Safari, IE and Opera.
-HTML5 Audio Player with Playlist, Repeat, Random, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
+HTML5 Audio Player with Playlist, Repeat, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
+
+HTML5 Audio Player with Playlist 
+http://www.youtube.com/watch?v=dLjtYaxs5EE
+
+
+**Browser & Format Support**
+Audio MP3 Codec With Flash as a fallback, it should work pretty much anywhere. It has been verified to work across: * Android (2.2+, w/Flash), Android (4.0+) * Mobile Safari (iOS 3+) * Firefox (3+, w/ Flash) * Opera (10+, w/ Flash) * IE (6, 7, 8, w/ Flash) * Chrome (7+) * Safari (4+)
 
 FAQ: http://html5.svnlabs.com/faq/
 
 
 == Installation ==
 
-1. Copy plugin folder "html5-mp3-player-with-playlist" into your wordpress plugins folder, normally located in /wp-content/plugins/
+1. Copy html5-mp3-player-with-playlist into your wordpress plugins folder, normally located in /wp-content/plugins/
 
 2. Login to Wordpress Admin and activate the plugin
 
@@ -26,17 +33,12 @@ A HTML5 playlist player can be embedded in a post using a tag of the following f
 [html5mp3 id=1]
 
 
-You can also set global options in the html5 mp3 playlist option menu.
-
 == Screenshots ==
 1. html5 mp3 full player.
-2. html5 mp3 small player.
-3. html5 mp3 playlist player settings.
-
+2. html5 mp3 playlist player settings.
 
 == Support ==
 For support please visit http://html5.svnlabs.com/
 
 == Changelog == 
-
 
