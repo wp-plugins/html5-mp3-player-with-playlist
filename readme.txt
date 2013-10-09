@@ -38,6 +38,7 @@ Old shortcode [html5mp3full:1] [html5mp3small:1] will still work from our webser
 == Screenshots ==
 1. html5 mp3 full player.
 2. html5 mp3 playlist player settings.
+3. Old html5 mp3 playlist player from our webserver http://html5player.svnlabs.com/v1/
 
 == Support ==
 For support please visit http://html5.svnlabs.com/
