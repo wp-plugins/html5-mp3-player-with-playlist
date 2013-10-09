@@ -225,6 +225,48 @@ function html5mp3_player1($content){
 }
 
 
+function html5mp3playlist_content($content) {
+    global $html5mp3playlist_sizes, $current_site;
+     
+	//echo $current_site; 
+	 
+    $size     = intval(get_option('html5mp3playlist_size'));
+    
+     
+	$regex = '/\[html5mp3(full|big|small):(.*?)]/i';
+    preg_match_all( $regex, $content, $matches );
+	//echo "<pre>";
+	//print_r($matches);
+	
+	$sc = count($matches[0]);
+	
+	for($ij=0;$ij<$sc;$ij++)
+	{
+	
+	$root_link = "http://html5player.svnlabs.com/v1/";
+     
+	if($matches[1][$ij]=="full") 
+	{ 
+	 $replace = '<iframe src="'.$root_link.'html5full.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
+	}
+    else if($matches[1][$ij]=="big") 
+	{
+	$replace = '<iframe src="'.$root_link.'html5big.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="414"></iframe>';	
+	}
+	else
+	{
+	$replace = '<iframe src="'.$root_link.'html5small.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';	
+	}
+	
+    $content = str_replace($matches[0][$ij], $replace, $content);
+	
+	}
+    
+    
+    return $content;
+}
+
+
 function wp_html5mp3_player( $atts, $content = null ) {
 
     global $wpdb;
@@ -290,6 +332,8 @@ function wp_html5mp3_player( $atts, $content = null ) {
 
 
 add_shortcode('html5mp3','wp_html5mp3_player');
+
+add_filter('the_content','html5mp3playlist_content');
 
 //add_filter('the_content','wp_html5mp3_player');
 

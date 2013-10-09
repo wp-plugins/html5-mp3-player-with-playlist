@@ -32,6 +32,8 @@ A HTML5 playlist player can be embedded in a post using a tag of the following f
 
 [html5mp3 id=1]
 
+Old shortcode [html5mp3full:1] [html5mp3small:1] will still work from our webserver http://html5player.svnlabs.com/v1/
+
 
 == Screenshots ==
 1. html5 mp3 full player.
