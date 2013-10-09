@@ -148,11 +148,7 @@ Background Color: #<input type="text" size="7" name="bgcolor" value="<?php echo 
 
 Artwork: <input type="text" name="pimage" value="<?php echo $docdata['image']; ?>" placeholder="image" />&nbsp;&nbsp;&nbsp;&nbsp;
 
-<?php /*?>Player Size: <select name="size">
-<option value="full" <?php if($docdata['size']=="full") { ?>selected="selected"<?php } ?>>Full (Horizontal)</option>
-<?php /*?><option value="big" <?php if($docdata['size']=="big") { ?>selected="selected"<?php } ?>>Big (Vertical)</option><?php */?>
-<option value="small" <?php if($docdata['size']=="small") { ?>selected="selected"<?php } ?>>Small (No Playlist)</option>
-</select><?php */?>
+ 
 
 <?php /*?>Width: <input type="text" name="width" value="<?php echo $docdata['width']; ?>" placeholder="width" />&nbsp;&nbsp;&nbsp;&nbsp;
 Height: <input type="text" name="height" value="<?php echo $docdata['height']; ?>" placeholder="height" />&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
