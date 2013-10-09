@@ -320,4 +320,40 @@ function removeThisElement(idnum)
   </tbody>
 </table>   
 
-<?php } ?>          
+<?php } ?>      
+<br />
+<br />
+
+<script language="javascript">
+
+function getSC()
+{
+
+//var currentTime = Date.now() || +new Date();
+
+var thestring = document.getElementById('oldsc').value;
+var thenum = thestring.match(/\d+/g)[2];
+
+var fcode = '<iframe src="http://html5player.svnlabs.com/v1/html5full.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
+var scode = '<iframe src="http://html5player.svnlabs.com/v1/html5small.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';
+
+document.getElementById('fullcode').style.display='block';
+document.getElementById('smallcode').style.display='block';
+
+document.getElementById('fullcode').innerHTML=fcode;
+document.getElementById('smallcode').innerHTML=scode;
+
+
+
+}
+
+</script>
+
+
+<h2>Get Old ShortCode</h2>
+
+<input type="text"  name="oldsc" id="oldsc" size="30" value="[html5mp3full:1]" />&nbsp;<input onclick="getSC();" type="button" name="but" value="Get Widget" /> <br />
+
+<textarea cols="60" rows="5" id="fullcode" onFocus="this.select();" style="border:1px dotted #343434; display:none;" ></textarea>&nbsp;<textarea cols="60" rows="5" id="smallcode" onFocus="this.select();" style="border:1px dotted #343434; display:none;" ></textarea>
+
+    
