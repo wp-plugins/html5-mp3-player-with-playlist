@@ -11,6 +11,8 @@ Stable tag: 2.7
 Allows Wordpress users to easily use HTML5 <audio> the element enable native audio playback within the browser. It supports all browsers i.e. Firefox, Chrome, Safari, IE and Opera.
 HTML5 Audio Player with Playlist, Repeat, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
 
+**Important:** before updating HTML5 MP3 Player with Playlist Plugin, please back up your database and files. For help with updates, visit the Updating WordPress Codex page.
+
 HTML5 Audio Player with Playlist 
 http://www.youtube.com/watch?v=dLjtYaxs5EE
 
