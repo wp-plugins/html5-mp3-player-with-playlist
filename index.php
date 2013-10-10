@@ -344,4 +344,22 @@ function my_init() {
 }
 add_action('init', 'my_init');
 
+
+function html5mp3onUpgrade() {
+
+global $wpdb;
+$table_name_xml = "xml";
+
+if($wpdb->get_var("SHOW TABLES LIKE '$table_name_xml'") != $table_name_xml  ) 
+{
+$sql = "ALTER TABLE  `xml` ADD  `content` TEXT NOT NULL AFTER  `xml` ";
+
+require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        dbDelta($sql);
+
+}
+
+}
+add_action( 'admin_init', 'html5mp3onUpgrade' );
+
 ?>
