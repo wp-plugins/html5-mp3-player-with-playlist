@@ -47,3 +47,12 @@ For support please visit http://html5.svnlabs.com/
 
 == Changelog == 
 
+= 2.7 =
+Iframes are removed from free plugin and all data saved to local wordpress site 
+
+
+== Upgrade Notice ==
+
+= 2.7 =
+Please remember to create a full site backup (files + database) before performing update.
+
