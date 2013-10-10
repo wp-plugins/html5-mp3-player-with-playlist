@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <title>Indian Music</title>
+	<artist>artist1</artist>
+	<song>http://forestmist.org/wp-content/uploads/2010/04/html5-audio-loop.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/3.jpg</image>
+  </item>
+  
+  <item>
+    <title>dead wrong intro</title>
+	<artist>artist2</artist>
+	<song>http://s3.amazonaws.com/audiojs/01-dead-wrong-intro.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/1.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>juicy-r</title>
+	<artist>artist3</artist>
+	<song>http://s3.amazonaws.com/audiojs/02-juicy-r.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/2.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>it's all about the crystalizabeths</title>
+	<artist>artist4</artist>
+	<song>http://s3.amazonaws.com/audiojs/03-its-all-about-the-crystalizabeths.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/4.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>islands is the limit</title>
+	<artist>artist5</artist>
+	<song>http://s3.amazonaws.com/audiojs/04-islands-is-the-limit.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/5.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>one more chance</title>
+	<artist>artist6</artist>
+	<song>http://s3.amazonaws.com/audiojs/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/6.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>suicidal fantasy</title>
+	<artist>artist7</artist>
+	<song>http://s3.amazonaws.com/audiojs/06-suicidal-fantasy.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/7.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>everyday shelter</title>
+	<artist>artist9</artist>
+	<song>http://s3.amazonaws.com/audiojs/07-everyday-shelter.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/2.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>basic hypnosis</title>
+	<artist>artist10</artist>
+	<song>http://s3.amazonaws.com/audiojs/08-basic-hypnosis.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/3.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>infinite victory</title>
+	<artist>artist11</artist>
+	<song>http://s3.amazonaws.com/audiojs/09-infinite-victory.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/4.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>the curious incident</title>
+	<artist>artist12</artist>
+	<song>http://s3.amazonaws.com/audiojs/10-the-curious-incident-of-big-poppa-in-the-nighttime.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/5.jpg</image>	  
+  </item>
+  
+  <item>
+    <title>mo stars mo problems</title>
+	<artist>artist8</artist>
+	<song>http://s3.amazonaws.com/audiojs/11-mo-stars-mo-problems.mp3</song>
+	<image>http://html5.svnlabs.com/songs-pic/6.jpg</image>	  
+  </item>
+  
+
+
+</list>
