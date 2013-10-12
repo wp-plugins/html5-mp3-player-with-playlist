@@ -388,6 +388,6 @@ $domhost = parse_url(plugin_dir_url(__FILE__));
 <br />
 <br />
 
-<span id="oldpl"></span>
+<span id="oldpl"><a target="_blank" onclick="return confirm(&quot;This will take you to plugin site?&quot;);" href="http://html5.svnlabs.com/form.php?host=<?php echo $domhost['host']; ?>"><strong>Please click on this URL to get old playlists</strong></a></span>
 
     
