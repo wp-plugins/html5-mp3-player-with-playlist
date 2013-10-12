@@ -307,7 +307,7 @@ function removeThisElement(idnum)
         <td width="10%">[html5mp3 id=<?php echo $result->id; ?>]</td>
          
         <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_add_playlist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
-        <td width="10%"><a onclick="return confirm('Are you sure?');" href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_add_playlist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
+        <td width="10%"><a onclick="return confirm('Are you sure?');" href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_playlist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
 	</tr>
 	<?php $mmm=1; } ?>
 	
@@ -347,7 +347,30 @@ document.getElementById('smallcode').innerHTML=scode;
 
 }
 
+
+function OldPlaylists()
+{
+
+var thestring = document.getElementById('oldscid').value;
+
+var currt = thestring.replace("http://"," ");
+
+var scode = '<a target="_blank" onclick="return confirm(&quot;This will take you to plugin site?&quot;);" href="http://html5.svnlabs.com/form.php?host='+currt+'"><strong>Please click on this URL to get old playlists</strong></a>';
+
+document.getElementById('oldpl').innerHTML=scode;
+
+
+
+
+}
+
 </script>
+
+<?php 
+
+$domhost = parse_url(plugin_dir_url(__FILE__));
+
+?>
 
 
 <h2>Get Old ShortCode</h2>
@@ -355,5 +378,16 @@ document.getElementById('smallcode').innerHTML=scode;
 <input type="text"  name="oldsc" id="oldsc" size="30" value="[html5mp3full:1]" />&nbsp;<input onclick="getSC();" type="button" name="but" value="Get Widget" /> <br />
 
 <textarea cols="60" rows="5" id="fullcode" onFocus="this.select();" style="border:1px dotted #343434; display:none;" ></textarea>&nbsp;<textarea cols="60" rows="5" id="smallcode" onFocus="this.select();" style="border:1px dotted #343434; display:none;" ></textarea>
+
+
+<h2>Get Old Playlists</h2>
+
+<input type="text"  name="oldscid" id="oldscid" size="30" value="<?php echo $domhost['host']; ?>" />&nbsp;<input onclick="OldPlaylists();" type="button" name="but" value="Get Playlists" /> <br />
+(i.e. html5.svnlabs.com without http://)
+
+<br />
+<br />
+
+<span id="oldpl"></span>
 
     

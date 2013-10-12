@@ -2,6 +2,7 @@
 
 global $wpdb;
 $table		=	$wpdb->prefix."html5mp3_playlist";
+$itable		=	$wpdb->prefix."html5mp3_items";
 
 
 if(isset($_GET['id'])){
@@ -23,6 +24,11 @@ if($action=="delete") {
 $delete		=	$wpdb->query(
 							"DELETE FROM $table WHERE id='$id'"
 						);
+						
+						
+$delete		=	$wpdb->query(
+							"DELETE FROM $itable WHERE pid='$id'"
+						);	
 						
 $isuccess	=	"Playlist deleted successfully ";						
 						
