@@ -62,7 +62,7 @@ var $ = jQuery;
 <script type="text/javascript" src="<?php echo plugin_dir_url(__FILE__); ?>js/jquery.tinyscrollbar.min.js"></script>
 
 <script src="<?php echo plugin_dir_url(__FILE__); ?>audiojs/audio.js"></script>
-<script src="<?php echo plugin_dir_url(__FILE__); ?>js/coresd.js"></script>	  
+<script src="<?php echo plugin_dir_url(__FILE__); ?>js/coresd-min.js"></script>	  
 	  
 
 <script type="text/javascript">

@@ -20,8 +20,11 @@ Copyright 2012 SVN Labs Softwares, Jaipur, India All Rights Reserved.
 
 
 //Database table versions
-global $html5mp3_player_db_table_version;
+global $html5mp3_player_db_table_version, $local_variables, $localvariables;
 $html5mp3_player_db_table_version = "2.7.0";
+$local_variables = array();
+$localvariables = array();
+
 
 //Create database tables
 function html5mp3_db_create () {
@@ -226,9 +229,11 @@ function html5mp3_player1($content){
 
 
 function html5mp3playlist_content($content) {
-    global $html5mp3playlist_sizes, $current_site;
+    global $html5mp3playlist_sizes, $current_site, $local_variables;
      
 	//echo $current_site; 
+	
+	//$local_variables = array();
 	 
     $size     = intval(get_option('html5mp3playlist_size'));
     
@@ -240,27 +245,53 @@ function html5mp3playlist_content($content) {
 	
 	$sc = count($matches[0]);
 	
+	
+	
+	wp_register_script( 'html5mp3playlist', plugins_url('html5plus/js/html5mp3playlist-min.js', __FILE__) , array('jquery'));
+	wp_enqueue_script( 'html5mp3playlist' );
+	
+	
+		
+	
 	for($ij=0;$ij<$sc;$ij++)
 	{
 	
-	$root_link = "http://html5player.svnlabs.com/v1/";
      
 	if($matches[1][$ij]=="full") 
 	{ 
-	 $replace = '<iframe src="'.$root_link.'html5full.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
+	 
+	$local_variables[] = array('html5mp3playlistid' => $matches[2][$ij], 'html5mp3playlistspan' => 'html5mp3playlist'.$matches[2][$ij], 'html5mp3playlistsize' => 'full');
+	 
+	
+	$replace = '<span id="html5mp3playlist'.$matches[2][$ij].'"></span>';
+	 
 	}
     else if($matches[1][$ij]=="big") 
 	{
-	$replace = '<iframe src="'.$root_link.'html5big.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="414"></iframe>';	
+	
+	$local_variables[] = array('html5mp3playlistid' => $matches[2][$ij], 'html5mp3playlistspan' => 'html5mp3playlist'.$matches[2][$ij], 'html5mp3playlistsize' => 'big');
+	
+	
+	$replace = '<span id="html5mp3playlist'.$matches[2][$ij].'"></span>';
+	
 	}
 	else
 	{
-	$replace = '<iframe src="'.$root_link.'html5small.html?id='.$matches[2][$ij].'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';	
+	
+	$local_variables[] = array('html5mp3playlistid' => $matches[2][$ij], 'html5mp3playlistspan' => 'html5mp3playlist'.$matches[2][$ij], 'html5mp3playlistsize' => 'small');
+	 
+	
+	$replace = '<span id="html5mp3playlist'.$matches[2][$ij].'"></span>';
+	
 	}
+	
+	
 	
     $content = str_replace($matches[0][$ij], $replace, $content);
 	
 	}
+	
+	wp_localize_script( 'html5mp3playlist', 'vars', $local_variables );
     
     
     return $content;
@@ -269,7 +300,7 @@ function html5mp3playlist_content($content) {
 
 function wp_html5mp3_player( $atts, $content = null ) {
 
-    global $wpdb;
+    global $wpdb, $localvariables;
 	$table		=	$wpdb->prefix.'html5mp3_playlist';
     $itable	=	$wpdb->prefix.'html5mp3_items';
     $stable	=	$wpdb->prefix.'html5mp3_sales';	
@@ -280,7 +311,7 @@ function wp_html5mp3_player( $atts, $content = null ) {
 	
 	//print_r($docdata);
 	
-	
+	//$localvariables = array();
 
    extract( shortcode_atts( array(
 		'id' => '1',
@@ -304,27 +335,25 @@ function wp_html5mp3_player( $atts, $content = null ) {
 	
 	//echo $size;
 	
+	
 	if( $embed == "1" )
-	 echo '<iframe src="'.$pluginurl.'html5plus/html5full.php?id='.$atts['id'].'&iframe=1" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
-    else
-     include("html5plus/html5full.php");
-
-	
-	
-/*	if($size=="full") 
-	{ 
-	 $mp3content = '<iframe src="'.$pluginurl.'html5plus/html5full.php?id='.$id.'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="586" height="227"></iframe>';
-	}
-    else if($size=="big") 
 	{
-	$mp3content = '<iframe src="'.$pluginurl.'html5plus/html5big.php?id='.$id.'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="367" height="434"></iframe>';	
+	 
+	 $localvariables[] = array('html5mp3playlistid' => $atts['id'], 'html5mp3playlisturl' => $pluginurl.'html5plus/', 'html5mp3playlistspan' => 'html5mp3playlists'.$atts['id'], 'html5mp3playlistsize' => 'full');
+	 
+	
+	 $mp3content = '<span id="html5mp3playlists'.$atts['id'].'"></span>';
+	 
+	 //print_r($local_variables);
+	 
 	}
 	else
 	{
-	$mp3content = '<iframe src="'.$pluginurl.'html5plus/html5small.php?id='.$id.'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="367" height="227"></iframe>';	
-	}*/
-
-
+     include("html5plus/html5full.php");
+    }
+	
+	wp_localize_script( 'html5mp3playlist', 'varss', $localvariables );
+	
 	
 	/* Actual Player code */
 
@@ -339,6 +368,7 @@ add_filter('the_content','html5mp3playlist_content');
 //add_filter('the_content','wp_html5mp3_player');
 
 function my_init() {
+
 	if (!is_admin()) {
 		wp_enqueue_script('jquery');
 	}

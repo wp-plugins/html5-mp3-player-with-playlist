@@ -381,6 +381,8 @@ var url = "<?php bloginfo('url'); ?>/wp-content/plugins/html5-mp3-player-with-pl
 <br />
 <br />
 
+<script type='text/javascript' src='<?php bloginfo('url'); ?>/wp-content/plugins/html5-mp3-player-with-playlist/html5plus/js/html5mp3playlist-min.js?ver=3.6.1'></script>
+
 <script language="javascript">
 
 function getSC()
@@ -391,14 +393,18 @@ function getSC()
 var thestring = document.getElementById('oldsc').value;
 var thenum = thestring.match(/\d+/g)[2];
 
-var fcode = '<iframe src="http://html5player.svnlabs.com/v1/html5full.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
-var scode = '<iframe src="http://html5player.svnlabs.com/v1/html5small.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';
+var varss = [{"html5mp3playlistid":thenum,"html5mp3playlistspan":"fullcode","html5mp3playlistsize":"full"}, {"html5mp3playlistid":thenum,"html5mp3playlistspan":"smallcode","html5mp3playlistsize":"small"}];
+
+//var fcode = '<iframe src="http://html5player.svnlabs.com/v1/html5full.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
+//var scode = '<iframe src="http://html5player.svnlabs.com/v1/html5small.html?id='+thenum+'" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="347" height="207"></iframe>';
+
+html5mp3player(varss);
 
 document.getElementById('fullcode').style.display='block';
 document.getElementById('smallcode').style.display='block';
 
-document.getElementById('fullcode').innerHTML=fcode;
-document.getElementById('smallcode').innerHTML=scode;
+//document.getElementById('fullcode').innerHTML=fcode;
+//document.getElementById('smallcode').innerHTML=scode;
 
 
 
