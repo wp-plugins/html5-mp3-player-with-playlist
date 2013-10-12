@@ -126,6 +126,9 @@ while( $docta = mysql_fetch_assoc($qqqq) )
 Manage HTML5 MP3 Audio link and other information<br /><br />
 
 
+<h3>Manage Info</h3>
+
+
 <br />
 
 Title: <input type="text" name="ptitle" value="<?php echo $docdata['title']; ?>" placeholder="title" />&nbsp;&nbsp;&nbsp;&nbsp;
@@ -174,6 +177,8 @@ Scrolling Title: <input type="checkbox" name="scrollingtext" value="1" <?php if(
 
 <?php /*?>Toggle Playlist: <input type="checkbox" name="toggleplaylist" value="1" <?php if(isset($docdata['toggleplaylist']) && $docdata['toggleplaylist']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
 
+Use iFrame: <input type="checkbox" name="embed" value="1" <?php if(isset($docdata['embed']) && $docdata['embed']=="1") { ?> checked="checked" <?php } ?> />&nbsp;&nbsp;&nbsp;&nbsp;
+
 <br />
 <?php /*?>Description: <br /><textarea name="description" cols="100" rows="5"><?php echo $docdata['description']; ?></textarea>&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
 
@@ -186,7 +191,7 @@ Scrolling Title: <input type="checkbox" name="scrollingtext" value="1" <?php if(
 
 PayPal Email: <input type="text" name="email" value="<?php echo $docdata['email']; ?>" />&nbsp;&nbsp;&nbsp;&nbsp;<?php */?>
 
-<br /><br />
+<br /><br /><h3>Manage Items</h3>
 
 <?php /*?>Source Type: <select name="sourcetype" onchange="sel_source(this.value);">
 <option value="default" <?php if($docdata['sourcetype']=="default") { ?>selected="selected"<?php } ?>>Default</option>
@@ -199,7 +204,7 @@ PayPal Email: <input type="text" name="email" value="<?php echo $docdata['email'
 <input type="hidden" name="sourcetype" value="default" />
 
 
-<br /><br /><br />
+<br />
 
 
 <div id="default" style="display:<?php if($docdata['sourcetype']=="default" || $docdata['sourcetype']=="") { ?>block<?php } else { ?>none<?php } ?>">

@@ -230,6 +230,60 @@ function removeThisElement(idnum)
 	}
  
 }
+
+
+function popitup(id, size) {
+
+var url = "<?php bloginfo('url'); ?>/wp-content/plugins/html5-mp3-player-with-playlist/html5plus/html5"+size+".php?id="+id+"&iframe=1";
+ 
+ url = addParameterToURL(url, "rand=2");
+
+        LeftPosition = (screen.width) ? (screen.width - 800) / 2 : 0;
+        TopPosition = (screen.height) ? (screen.height - 700) / 2 : 0;
+        //var sheight = 450;;/*(screen.height) * 0.9;*/
+        //var swidth = 370;;/*(screen.width) * 0.8;*/  
+		
+		if(size=="full")
+		{
+		  var sheight = 227; var swidth = 587;
+		}
+		
+		if(size=="big")
+		{
+		  var sheight = 450; var swidth = 370;
+		}
+		
+		if(size=="small")
+		{
+		  var sheight = 227; var swidth = 367;
+		}	
+		        
+
+        settings = 'height='+ sheight + ',width='+ swidth + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=yes,resizable=yes,toolbar=no,status=no,menu=no, directories=no,titlebar=no,location=no,addressbar=no'
+		
+		
+		
+        newwindow = window.open('', '', settings);
+        if (window.focus) { newwindow.focus(); newwindow.document.location.href=url; /*newwindow.location.reload()*/ 
+		
+		/*$('audio#player22').mediaelementplayer({
+		features: []	
+		});
+		
+		setTimeout("newPlayer();", 10000);*/
+		
+		}
+        return false;
+    }
+	
+	
+		function addParameterToURL(_url, param){
+    //_url = location.href;
+    _url += (_url.split('?')[1] ? '&':'?') + param;
+    return _url;
+}
+
+
 </script>
 
 <h2>Manage Playlist</h2>
@@ -263,6 +317,7 @@ function removeThisElement(idnum)
         <th scope="col" width="15%"><a href="#">Items</a></th>
         <th scope="col" width="10%"><a href="#">Shortcode</a></th>
          
+        <th scope="col" width="10%"><a href="#">Preview</a></th>	
         <th scope="col" width="10%"><a href="#">Edit</a></th>	
         <th scope="col" width="10%"><a href="#">Delete</a></th>	
      </tr>
@@ -274,7 +329,8 @@ function removeThisElement(idnum)
         <th scope="col" width="10%" ><a href="#">Size</a></th>
         <th scope="col" width="15%"><a href="#">Items</a></th>
         <th scope="col" width="10%"><a href="#">Shortcode</a></th>
-         
+        
+        <th scope="col" width="10%"><a href="#">Preview</a></th>	 
         <th scope="col" width="10%"><a href="#">Edit</a></th>	
         <th scope="col" width="10%"><a href="#">Delete</a></th>		
      </tr>
@@ -306,6 +362,7 @@ function removeThisElement(idnum)
         <td width="10%"><?php echo $isql; ?></td>
         <td width="10%">[html5mp3 id=<?php echo $result->id; ?>]</td>
          
+        <td width="10%"><a onclick="popitup('<?php echo $result->id; ?>', '<?php echo $result->size; ?>')" href="javascript:void(0);">Preview</a></td>  
         <td width="10%"><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_add_playlist&action=update&id=<?php echo $result->id; ?>">Update</a></td>
         <td width="10%"><a onclick="return confirm('Are you sure?');" href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_playlist&action=delete&id=<?php echo $result->id; ?>">Delete</a></td>
 	</tr>

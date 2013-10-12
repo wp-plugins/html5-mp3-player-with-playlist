@@ -295,6 +295,7 @@ function wp_html5mp3_player( $atts, $content = null ) {
 		'links' => '0',
 		'stitle' => '0',
 		'size' => $docdata[0]->size,
+		'embed' => $docdata[0]->embed
 	), $atts ) );
 
  
@@ -303,10 +304,10 @@ function wp_html5mp3_player( $atts, $content = null ) {
 	
 	//echo $size;
 	
-	
-	
- 
-    include("html5plus/html5full.php");
+	if( $embed == "1" )
+	 echo '<iframe src="'.$pluginurl.'html5plus/html5full.php?id='.$atts['id'].'&iframe=1" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="566" height="207"></iframe>';
+    else
+     include("html5plus/html5full.php");
 
 	
 	

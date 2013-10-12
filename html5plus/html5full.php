@@ -2,7 +2,16 @@
 ob_start();
 error_reporting(0);
 
-//include("db.php");
+$iframe = isset($_REQUEST['iframe'])?$_REQUEST['iframe']:"0";
+
+if($iframe=="1")
+{
+include("db.php");
+
+$inurl = str_replace("wp-content/plugins/html5-mp3-player-with-playlist/html5plus/", "wp-includes/js/jquery/jquery.js?ver=1.10.2", plugin_dir_url(__FILE__));
+
+echo '<script type="text/javascript" src="'.$inurl.'"></script>';
+}
 
 /*if(isset($_REQUEST['id']) && $_REQUEST['id']!="")
   $id = $_REQUEST['id'];
@@ -24,6 +33,8 @@ $scrollingtext = isset($docdata['scrollingtext'])?$docdata['scrollingtext']:"";
 $facebook = isset($docdata['facebook'])?$docdata['facebook']:"1";
 $twitter = isset($docdata['twitter'])?$docdata['twitter']:"1";
 $link = isset($docdata['link'])?$docdata['link']:"1";
+
+
 
 
 if($bgcolor=="") $bgcolor = '000';
@@ -103,7 +114,7 @@ var $ = jQuery;
     <div id="Playlist-heading<?php echo $id; ?>" style="height:16px;">
     
     <div style="float:left"><strong>Playlist</strong></div>
-    <div style="float:right; margin-right:-10px;"><a href="javascript:void(0)" onClick="SocialShareTwitter();" title="Twitter"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/twitter.png" border="0" width="18" /></a><a href="javascript:void(0)" onClick="SocialShareFB();"  title="Facebook"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/facebook.png" border="0" width="18" /></a>
+    <div style="float:right; margin-right:-10px;"><a href="<?php echo $twitter; ?>" target="_blank" title="Twitter"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/twitter.png" border="0" width="18" /></a><a href="<?php echo $facebook; ?>" target="_blank" title="Facebook"><img src="<?php echo plugin_dir_url(__FILE__); ?>images/facebook.png" border="0" width="18" /></a>
     
     
     </div>
@@ -211,5 +222,10 @@ var $ = jQuery;
 $mp3content .= ob_get_contents();
 
 ob_end_clean();
+
+if($iframe=="1")
+{
+echo $mp3content;
+}
 
 ?>
