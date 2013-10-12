@@ -423,6 +423,8 @@ document.getElementById('oldpl').innerHTML=scode;
 
 </script>
 
+
+
 <?php 
 
 $domhost = parse_url(plugin_dir_url(__FILE__));
@@ -446,5 +448,9 @@ $domhost = parse_url(plugin_dir_url(__FILE__));
 <br />
 
 <span id="oldpl"><a target="_blank" onclick="return confirm(&quot;This will take you to plugin site?&quot;);" href="http://html5.svnlabs.com/form.php?host=<?php echo $domhost['host']; ?>"><strong>Please click on this URL to get old playlists</strong></a></span>
+
+<br /><br /><br />
+
+<strong>Note:</strong> If you have problem in using player try option "Use iFrame" in Manage Playlist
 
     
