@@ -6,6 +6,9 @@ $iframe = isset($_REQUEST['iframe'])?$_REQUEST['iframe']:"0";
 
 if($iframe=="1")
 {
+
+$id = isset($_REQUEST['id'])?$_REQUEST['id']:"";
+
 include("db.php");
 
 $inurl = str_replace("wp-content/plugins/html5-mp3-player-with-playlist/html5plus/", "wp-includes/js/jquery/jquery.js?ver=1.10.2", plugin_dir_url(__FILE__));
