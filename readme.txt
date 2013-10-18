@@ -1,4 +1,4 @@
-=== HTML5 MP3 Player with Playlist ===
+=== HTML5 MP3 Player with Playlist Free ===
 Contributors: Sandeep Verma
 Donate link: http://html5.svnlabs.com/
 Tags: html5, mp3 player, playlist, audio, audio player, music player 
