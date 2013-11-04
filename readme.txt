@@ -50,6 +50,8 @@ For support please visit http://html5.svnlabs.com/
 = 2.7 =
 Iframes are removed from free plugin and all data saved to local wordpress site 
 
+Playlist items order by id
+
 
 == Upgrade Notice ==
 
