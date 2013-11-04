@@ -36,7 +36,7 @@ if($id)
 
 //echo "select * from `".$itable."` where pid = '".$id."'  ";
 
-$qqqq = mysql_query("select * from `".$itable."` where pid = '".$id."'  ");
+$qqqq = mysql_query("select * from `".$itable."` where pid = '".$id."' order by id ");
 
 $mm=1;
 
