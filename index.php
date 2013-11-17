@@ -367,13 +367,13 @@ add_filter('the_content','html5mp3playlist_content');
 
 //add_filter('the_content','wp_html5mp3_player');
 
-function my_init() {
+function html5mp3_init() {
 
 	if (!is_admin()) {
 		wp_enqueue_script('jquery');
 	}
 }
-add_action('init', 'my_init');
+add_action('init', 'html5mp3_init');
 
 
 ?>
