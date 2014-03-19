@@ -201,7 +201,7 @@ var $ = jQuery;
               <?php } ?><?php */?>
               
               
-              <li>
+              <li style="padding:2px;"> &bull;
                 <a id="source<?php echo $id; ?><?php echo $mm; ?>" href="#" data-src="<?php echo $mp3s; ?>" title="<?php echo $mp3t; ?>" class="track-name" name="<?php echo $mp3p; ?>"><?php echo $mp3t; ?></a>
                 <p class="Title01" style="font-family:Arial, Helvetica, sans-serif; color:#a19b9b; font-size:10px; margin:0px 0 0 0px; "><?php echo $mp3a; ?></p>
               </li>

@@ -359,7 +359,7 @@ var url = "<?php bloginfo('url'); ?>/wp-content/plugins/html5-mp3-player-with-pl
     <tr>
         <td><a href="<?php bloginfo('url'); ?>/wp-admin/admin.php?page=html5mp3_playlist&action=preview&id=<?php echo $result->id; ?>"><?php echo $result->title; ?></a></td>
         <td width="10%"><?php echo $result->size; ?></td>
-        <td width="10%"><?php echo $isql; ?></td>
+        <td width="10%"><?php echo $isql; ?> Song(s)&nbsp;<a href="<?php bloginfo('url'); ?>/wp-content/plugins/html5-mp3-player-with-playlist/html5plus/xml.php?id=<?php echo $result->id; ?>" target="_blank">(XML)</a></td>
         <td width="10%">[html5mp3 id=<?php echo $result->id; ?>]</td>
          
         <td width="10%"><a onclick="popitup('<?php echo $result->id; ?>', '<?php echo $result->size; ?>')" href="javascript:void(0);">Preview</a></td>  
