@@ -155,16 +155,16 @@ var $ = jQuery;
         duration.innerHTML = ((m<10?'0':'')+m+':'+(s<10?'0':'')+s);
 		
 		if(isNaN(s))
-		 $('#duration-time'+id).html("00:00");
+		 $('#duration-time'+idd).html("00:00");
 		else 
-		 $('#duration-time'+id).html(duration.innerHTML);
+		 $('#duration-time'+idd).html(duration.innerHTML);
       },
       loadProgress: function(percent) {
         var player = this.settings.createPlayer,
             scrubber = getByClass(player.scrubberClass, this.wrapper),
             loaded = getByClass(player.loaderClass, this.wrapper);
         loaded.style.width = (scrubber.offsetWidth * percent) + 'px';
-		$('#loaded-bar'+id).width( (scrubber.offsetWidth * percent) + 'px' )
+		$('#loaded-bar'+idd).width( (scrubber.offsetWidth * percent) + 'px' )
 		
       },
       playPause: function() {
@@ -174,19 +174,19 @@ var $ = jQuery;
       play: function() {
         var player = this.settings.createPlayer;
         container[audiojs].helpers.addClass(this.wrapper, player.playingClass);
-		$('#play-pause-btn'+id).attr('src',plugin_url+'/images/play-btn.png');
+		$('#play-pause-btn'+idd).attr('src',plugin_url+'/images/play-btn.png');
       },
       pause: function() {
         var player = this.settings.createPlayer;
         container[audiojs].helpers.removeClass(this.wrapper, player.playingClass);
-		$('#play-pause-btn'+id).attr('src',plugin_url+'/images/pause-btn.png');
+		$('#play-pause-btn'+idd).attr('src',plugin_url+'/images/pause-btn.png');
       },
       updatePlayhead: function(percent) {
         var player = this.settings.createPlayer,
             scrubber = getByClass(player.scrubberClass, this.wrapper),
             progress = getByClass(player.progressClass, this.wrapper);
         progress.style.width = (scrubber.offsetWidth * percent) + 'px';
-		$('#progress-bar'+id).width( (scrubber.offsetWidth * percent) + 'px' )
+		$('#progress-bar'+idd).width( (scrubber.offsetWidth * percent) + 'px' )
 
         var played = getByClass(player.playedClass, this.wrapper),
             p = this.duration * percent,
@@ -195,9 +195,9 @@ var $ = jQuery;
         played.innerHTML = ((m<10?'0':'')+m+':'+(s<10?'0':'')+s);
 		
 		if(isNaN(s))
-		 $('#palyed-time'+id).html("00:00");
+		 $('#palyed-time'+idd).html("00:00");
 		else
-		 $('#palyed-time'+id).html(played.innerHTML);
+		 $('#palyed-time'+idd).html(played.innerHTML);
       }
     },
 
@@ -237,6 +237,8 @@ var $ = jQuery;
           id = 'audiojs'+this.instanceCount,
           wrapperId = 'audiojs_wrapper'+this.instanceCount,
           instanceCount = this.instanceCount++;
+		  
+		  //alert(id)
 
       // Check for `autoplay`, `loop` and `preload` attributes and write them into the settings.
       if (element.getAttribute('autoplay') != null) s.autoplay = true;
@@ -677,13 +679,13 @@ var $ = jQuery;
       this.playing = true;
       this.element.play();
       this.settings.play.apply(this);
-	  $('#play-pause-btn'+id).attr('src',plugin_url+'/images/play-btn.png');
+	  $('#play-pause-btn'+idd).attr('src',plugin_url+'/images/play-btn.png');
     },
     pause: function() {
       this.playing = false;
       this.element.pause();
       this.settings.pause.apply(this);
-	  $('#play-pause-btn'+id).attr('src',plugin_url+'/images/pause-btn.png');
+	  $('#play-pause-btn'+idd).attr('src',plugin_url+'/images/pause-btn.png');
     },
     setVolume: function(v) {
       this.element.volume = v;

@@ -51,7 +51,7 @@ var autoplayz = false;
 <?php } ?>
 
 var plugin_url = '<?php echo plugin_dir_url(__FILE__); ?>';
-var id = '<?php echo $id; ?>';
+var idd = '<?php echo $id; ?>';
 
 var $ = jQuery;
 
@@ -88,7 +88,7 @@ var $ = jQuery;
     <div id="Player-display-screen<?php echo $id; ?>"> <img src="<?php echo plugin_dir_url(__FILE__); ?>images/spacer.gif" alt="display" id="current-play-pic<?php echo $id; ?>" style="width:325px; height:86px;" /></div>
     
     <div  id="Player-progressbar<?php echo $id; ?>">
-      <div class="scrubber" id="Player-progressbar01<?php echo $id; ?>">
+      <div class="scrubber" id="Player-progressbar01<?php echo $id; ?>"   style="overflow:hidden">
         <div id="loaded-bar<?php echo $id; ?>" class="progress" style=" background:#666666; width:0;  height: 7px;">
           <div id="progress-bar<?php echo $id; ?>" class="loaded" style="width:0; height:7px; background:#e5cf58;"></div>
         </div>
@@ -201,7 +201,7 @@ var $ = jQuery;
               <?php } ?><?php */?>
               
               
-              <li style="padding:2px;"> &bull;
+              <li style="padding:2px;">
                 <a id="source<?php echo $id; ?><?php echo $mm; ?>" href="#" data-src="<?php echo $mp3s; ?>" title="<?php echo $mp3t; ?>" class="track-name" name="<?php echo $mp3p; ?>"><?php echo $mp3t; ?></a>
                 <p class="Title01" style="font-family:Arial, Helvetica, sans-serif; color:#a19b9b; font-size:10px; margin:0px 0 0 0px; "><?php echo $mp3a; ?></p>
               </li>

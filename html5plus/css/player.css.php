@@ -49,7 +49,7 @@
 
 .Playlist01 .Title01{  font-family:Arial, Helvetica, sans-serif; color:#a19b9b; font-size:10px; margin:0px 0 0 0px;  }
 .Playlist01 ol li a{  font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:11px;  }
-.Playlist01 ol {padding:0; /*margin:0 0 0 32px;*/  }
+.Playlist01 ol {padding:0; margin:0 0 0 25px;  }
 
 .Playlist01 ol li { list-style:circle; }
 

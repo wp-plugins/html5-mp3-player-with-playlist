@@ -22,8 +22,8 @@ function onTick1(value) {
 		{
 		
 		
-         var str = jQuery('#current-track'+id).html();
-		 var mp3p = jQuery('#current-play-pic'+id).attr('src');
+         var str = jQuery('#current-track'+idd).html();
+		 var mp3p = jQuery('#current-play-pic'+idd).attr('src');
 		 
 		 var currt = str.replace("&"," ");
 		
@@ -43,8 +43,8 @@ function onTick1(value) {
 		{
 		
 		
-		var str = jQuery('#current-track'+id).html();
-		var mp3p = jQuery('#current-play-pic'+id).attr('src');
+		var str = jQuery('#current-track'+idd).html();
+		var mp3p = jQuery('#current-play-pic'+idd).attr('src');
 		
 		 var currt = str.replace("&"," ");
 		
