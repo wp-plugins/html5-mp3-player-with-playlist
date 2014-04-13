@@ -19,6 +19,7 @@ Copyright 2012 SVN Labs Softwares, Jaipur, India All Rights Reserved.
 */
 
 
+
 //Database table versions
 global $html5mp3_player_db_table_version, $local_variables, $localvariables;
 $html5mp3_player_db_table_version = "2.7.0";
