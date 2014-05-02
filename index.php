@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 
 /*
 Plugin Name: HTML5 MP3 Playlist Player Free
