@@ -52,9 +52,13 @@ Iframes are removed from free plugin and all data saved to local wordpress site
 
 Playlist items order by id
 
+Fixed - Full Path Disclosure
 
 == Upgrade Notice ==
 
 = 2.7 =
 Please remember to create a full site backup (files + database) before performing update. Paid Plugin Users don't upgrade to Free Plugin.
+
+
+
 
