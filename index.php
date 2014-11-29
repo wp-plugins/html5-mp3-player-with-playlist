@@ -8,7 +8,7 @@ Description: Allows Wordpress users to easily use HTML5 <audio> the element enab
 Date: 2013, June, 1
 Author: Sandeep Verma
 Author URI: http://www.svnlabs.com/
-Version: 2.7.0
+Version: 2.8.0
 
 */
 

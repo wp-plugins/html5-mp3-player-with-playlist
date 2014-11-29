@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+        exit;
+}
+
 global $wpdb;
 $table		=	$wpdb->prefix."html5mp3_playlist";
 $itable		=	$wpdb->prefix."html5mp3_items";

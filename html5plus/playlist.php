@@ -1,5 +1,16 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+        exit;
+}
+
+//echo $filename = __FILE__;
+//if(preg_match("/playlist.php/",$filename)){
+//die();
+//}
+
+//echo ABSPATH;
+
 global $wpdb;
 $table		=	$wpdb->prefix."html5mp3_playlist";
 $itable		=	$wpdb->prefix."html5mp3_items";
