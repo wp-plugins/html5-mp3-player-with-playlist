@@ -4,7 +4,7 @@ Donate link: http://html5.svnlabs.com/
 Tags: html5, mp3 player, playlist, audio, audio player, music player 
 
 Requires at least: 1.5
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: 2.8.0
 
 
@@ -12,6 +12,8 @@ Allows Wordpress users to easily use HTML5 <audio> the element enable native aud
 HTML5 Audio Player with Playlist, Repeat, Stream Seek, Volume Control, Timer, Next, Previous, Play-Pause option.
 
 **Important:** before updating HTML5 MP3 Player with Playlist Plugin, please back up your database and files. For help with updates, visit our website, Paid Plugin Users don't upgrade to Free Plugin.
+
+**Free HTML5 MP3 Player** HTML5Tap players are hosted on CDN http://player.html5tap.com/v1 so for best performance we are using iframe based embed code in this plugin from CDN. 
 
 HTML5 Audio Player with Playlist 
 http://www.youtube.com/watch?v=dLjtYaxs5EE
