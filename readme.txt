@@ -20,45 +20,70 @@ http://www.youtube.com/watch?v=dLjtYaxs5EE
 **Browser & Format Support**
 Audio MP3 Codec With Flash as a fallback, it should work pretty much anywhere. It has been verified to work across: * Android (2.2+, w/Flash), Android (4.0+) * Mobile Safari (iOS 3+) * Firefox (3+, w/ Flash) * Opera (10+, w/ Flash) * IE (6, 7, 8, w/ Flash) * Chrome (7+) * Safari (4+)
 
-FAQ: http://html5.svnlabs.com/faq/
+
+**Read MP3 Folder URL**
+
+This plugin can read MP3 folder like http://www.domain.com/mp3/ and automatically create dynamic horizontal & vertical playlist 
+
+MP3 Folder with song's index list
+http://www.domain.com/mp3/ (public) or http://www.domain.com/mp3/list.php (private)
+
+
+**Read Feedburner URL**
+
+This plugin can read feedburner url like http://feeds.feedburner.com/thejustinwayneshow and automatically create dynamic horizontal & vertical playlist  
+
+
+**Features**
+
+* Folder: MP3 URL or MP3 Songs folder or Feedburner XML
+* Prev / Loop / Next in playlist
+* Embed full playlist
+* Customize social link
+
+**Paid Features**
+
+* Self hosted player files
+* Best support on email
+* Download songs option 
+* MP3 Song's information using ID3 Tags
+* Customize Social Share on Facebook & Twitter
+* Volume Control
+* Embed Code Option
+
+
+[Buy Now HTML5 MP3 Player for Folder](http://html5plus.svnlabs.com/shop/html5-mp3-player-for-folder/)
+
+[Buy Now HTML5 MP3 Player for Feedburner Podcast](http://html5plus.svnlabs.com/shop/html5-mp3-player-for-feedburner-podcast/)
 
 
 == Installation ==
 
-1. Copy html5-mp3-player-with-playlist into your wordpress plugins folder, normally located in /wp-content/plugins/
-
-2. Login to Wordpress Admin and activate the plugin
+Unzip "html5-mp3-player-with-playlist.zip" and copy folder "html5-mp3-player-with-playlist" into your wordpress plugins folder, normally located in /wp-content/plugins/
 
 
-A HTML5 playlist player can be embedded in a post using a tag of the following form:
+**What you need to configure this plugin in wordpress?**
 
-[html5mp3 id=1]
+MP3 Folder with song's list
+http://www.domain.com/mp3/ (public) or http://www.domain.com/mp3/list.php (private)
 
-Old shortcode [html5mp3full:1] [html5mp3small:1] will still work from our webserver http://html5player.svnlabs.com/v1/
 
+Shortcode for Page or Post
+
+[html5tap id=1]
+
+== Frequently Asked Questions ==
+
+http://html5.svnlabs.com/faq/
 
 == Screenshots ==
-1. html5 mp3 full player.
-2. html5 mp3 playlist player settings.
-3. Old html5 mp3 playlist player from our webserver http://html5player.svnlabs.com/v1/
+
+1. HTML5 MP3 Playlist Player
+2. Add New HTML5Tap Playlist
+3. Input MP3 Source & hit Capture
+4. Save & Get Shortcode for page / post 
 
 == Support ==
-For support please visit http://html5.svnlabs.com/
+For support please visit http://html5plus.svnlabs.com/contact-us/support/
 
-== Changelog == 
-
-= 2.7 =
-Iframes are removed from free plugin and all data saved to local wordpress site 
-
-Playlist items order by id
-
-Fixed - Full Path Disclosure
-
-== Upgrade Notice ==
-
-= 2.7 =
-Please remember to create a full site backup (files + database) before performing update. Paid Plugin Users don't upgrade to Free Plugin.
-
-
-
-
+== Changelog ==
