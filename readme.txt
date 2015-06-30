@@ -54,9 +54,7 @@ This plugin can read feedburner url like http://feeds.feedburner.com/thejustinwa
 * Embed Code Option
 
 
-[Buy Now HTML5 MP3 Player for Folder](http://html5plus.svnlabs.com/shop/html5-mp3-player-for-folder/)
-
-[Buy Now HTML5 MP3 Player for Feedburner Podcast](http://html5plus.svnlabs.com/shop/html5-mp3-player-for-feedburner-podcast/)
+[Buy Now HTML5 MP3 Player](http://html5plus.svnlabs.com/shop/html5-mp3-player-for-wordpress/)
 
 
 == Installation ==
